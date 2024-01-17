@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="222pt" height="101pt" viewBox="0.00 0.00 221.85 101.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97)">
+<title>g</title>
+<g id="clust1" class="cluster">
+<title>clusterG2</title>
+<polygon fill="transparent" stroke="#000000" points="85.2104,-8 85.2104,-85 205.8458,-85 205.8458,-8 85.2104,-8"/>
+<text text-anchor="middle" x="145.5281" y="-68.4" font-family="Times,serif" font-size="14.00" fill="#000000">Body</text>
+</g>
+<!-- content -->
+<g id="node1" class="node">
+<title>content</title>
+<polygon fill="none" stroke="#000000" points="57.316,-52 11.8944,-52 11.8944,-56 -.1056,-56 -.1056,-16 57.316,-16 57.316,-52"/>
+<polyline fill="none" stroke="#000000" points="-.1056,-52 11.8944,-52 "/>
+<text text-anchor="middle" x="28.6052" y="-29.8" font-family="Times,serif" font-size="14.00" fill="#000000">content</text>
+</g>
+<!-- insertContent -->
+<g id="node2" class="node">
+<title>insertContent</title>
+<text text-anchor="middle" x="145.5281" y="-29.8" font-family="Times,serif" font-size="14.00" fill="#000000">%CONTENT%</text>
+</g>
+<!-- content&#45;&gt;insertContent -->
+<g id="edge1" class="edge">
+<title>content-&gt;insertContent</title>
+<path fill="none" stroke="#000000" d="M57.5075,-34C65.369,-34 74.1982,-34 83.1504,-34"/>
+<polygon fill="#000000" stroke="#000000" points="83.265,-37.5001 93.265,-34 83.2649,-30.5001 83.265,-37.5001"/>
+</g>
+</g>
+</svg>

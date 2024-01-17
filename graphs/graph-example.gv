@@ -1,0 +1,18 @@
+# used for images/graph-example.svg
+# Generated with https://edotor.net/ and layout neato
+digraph G {
+
+	bgcolor=transparent;
+
+	3 -> 1;
+	2 -> 3;
+	3 -> 4;
+	3 -> 5;
+	5 -> 3;
+	2 -> 4;
+	3 -> 2;
+
+	6 -> 7;
+	7 -> 6;
+
+}

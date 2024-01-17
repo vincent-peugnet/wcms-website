@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>W - usage</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">W</h1>
+
+        <ul>
+            <li>
+                😺 <a href="https://github.com/vincent-peugnet/wcms"> Gihub</a>
+            </li>
+            <li>
+                💬 <a href="matrix:r/w-cms:club1.fr">Matrix: #w-cms:club1.fr</a>
+            </li>
+        </ul>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="index.html">home</a></li>
+            <li>[<a href="usage.html">usage</a>]</li>
+            <li><a href="archives.html">archives</a></li>
+        </ol>
+
+        <ul>
+            <li>✨ <a href="#introduction">Introduction</a></li>
+            <li>📄 <a href="#create-a-page">Create a page</a></li>
+            <li>🔗 <a href="#create-a-link">Create a link</a></li>
+            <li>🏠 <a href="#home-interface">Home interface</a></li>
+            <li>🖼️ <a href="#adding-images">Adding images</a></li>
+            <li>🏗️ <a href="#advanced-building">Advanced building</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2 id="introduction">
+            ✨ Introduction
+        </h2>
+
+        <h3>Page identifier</h3>
+
+        <p>
+            The page is the main unit of W.
+            Each page is associated with an <span class="highlight">identifier</span>, which is also the address of your page.
+            It can only be made up of lowercase characters, hyphens or underscores.
+            To access a page, type its identifier after the domain name or subfolder in which W is installed.
+        </p>
+
+        <div class="block">
+            <code>
+                <span class="lowlight">https://</span>example.net/<span class="highlight">my-page</span>
+            </code>
+        </div>
+
+        <h3>
+            Structure
+        </h3>
+
+        <p>
+            
+            There is no hierarchy between pages: in W, all pages are equal.
+            It's impossible to create subdirectories.
+            The structure is only driven by links that exist or not between pages.
+        </p>
+
+        <img src="images/graph-example.svg" alt="">
+
+        <p>
+            In this example, it's impossible for visitor that are
+            on page <span class="circle">1</span> to explore any other pages.
+            Being on the page <span class="circle">3</span> give visitors access to many pages,
+            but not to pages <span class="circle">6</span> and <span class="circle">7</span>
+            which are only interconnected between themselves.
+        </p>
+
+        <h3>Hompage</h3>
+
+        <p>
+            By default, there is no home page in W.
+            This is usefull if you want your website to store many different things.
+            But if you are building a more conventionnal website,
+            you can choose to redirect root directory to one of your pages. 
+        </p>
+
+
+        <h2 id="create-a-page">
+            📄 Create a page
+            <a href="#create-a-page">#</a>
+        </h2>
+
+
+        <p>
+            Page creation is designed to be as fast as possible.
+            Simply type in the address bar of your Web browser a title for the page, followed by <code>/add</code>.
+            The title is automatically transformed into an identifier.
+            If it contains non-compatible characters, spaces or capital letters, these will be removed or converted.
+            This takes you straight to the editing interface.
+        </p>
+
+        <img src="images/welcome.gif" alt="" class="gif">
+
+        <p>
+            From here, you can write the content of your page using Markdown.
+            To save your page, click on <button>update</button> or use the <kbd>CTRL</kbd> + <kbd>S</kbd> keys.
+            You can then display the result by clicking on the eye button, or using the <kbd>CTRL</kbd> + <kbd>D</kbd> keys.
+            The page will be displayed in a new tab.
+        </p>
+
+        <p>
+            When we make new modifications from the editing interface and click on "display", if our page's tab is still open, it will be re-used.
+            So there's no need to close it each time.
+        </p>
+        
+        <p>
+            You may have noticed that the address of the editing interface corresponds to our page identifier followed by <code>/edit</code>.
+            You can edit any of your pages this way.
+            If you're not logged in, you'll be asked for your login details.
+            Editing tabs are highlighted by a pencil symbol before the page title.
+            If changes have been made but not saved, an asterisk appears in front of the page ID in the interface and in front of the tab title.
+            And if you try to close the tab, a prevention message will appear.
+        </p>
+            
+
+        <h2 id="create-a-link">
+            🔗 Create a link
+            <a href="#create-a-link">#</a>
+        </h2>
+
+        <p>
+            To create links to other Web sites, you can of course use Markdown syntax, or even HTML directly, if you want more customization.
+            External links are those pointing to another site and beginning with <code>https://</code>.
+            Internal links are those that lead to other pages on your W.
+            To make internal links, you can still use Markdown or HTML. The page identifier is used as the target of the link.
+        </p>
+
+        <p>
+            But there's a third approach:
+            you can also create links by surrounding the page identifier with two square brackets on either side.
+            This will later use the page title as the visible part of the link (if it exists!).
+        </p>
+
+        <img src="images/kitchen.gif" alt="" class="gif">
+
+        <p>
+            When you arrive at an identifier that does not correspond to any page, you receive an alert message: “this page does not exist yet”.
+            This message is customizable in the administration interface.
+            When you are connected as an editor, a <button>⭐ create</button> button is also displayed.
+            Clicking on it is another possible way to create a page equivalent to typing <code>/add</code> after the identifier in the address bar.
+        </p>
+
+        <h2 id="home-interface">
+            🏠 Home interface
+            <a href="#home-interface">#</a>
+        </h2>
+
+        <p>
+            By going directly to the installation address of W, we arrive at the “Home” interface.
+            From this location you can view all the pages that W contains.
+            They are displayed in list form, which allows you to view the associated metadata..
+            You can also edit or view the pages by clicking on the pencil and eye icons.
+        </p>
+
+        <img src="images/home.gif" alt="" class="gif">
+
+        <p>
+            This interface has powerful filtering tools which will later allow you to generate menus to integrate on your pages.
+        </p>
+
+
+        <h2 id="adding-images">
+            🖼️ Adding images
+            <a href="#adding-images">#</a>
+        </h2>
+
+        <p>
+            W has a media manager.
+            This allows you to import images, sound, videos, fonts or other files, then organize them.
+            When you want to insert media, it is possible to copy a code to paste into your page.
+            This code is simply markdown or HTML, depending on the media type.
+        </p>
+
+
+        <img src="images/toaster.gif" alt="" class="gif">
+
+        <p>
+            In the case of large quantities of files, you can then use another type of code,
+            specific to W, which allows the entire content of a folder to be displayed.
+            This code can be enhanced with sorting and filtering options for finer adjustments.
+        </p>
+
+
+
+        <h2 id="advanced-building">
+            🏗️ Advanced building
+            <a href="#advanced-building">#</a>
+        </h2>
+
+        <p>
+            The page editor allow you to use four different tabs.
+            the CSS and Javascript tabs are pretty self-explanatory.
+            They will generate files that will be linked to the page.
+            <br>
+            The BODY is used to arrange the rendering of the final HTML page.
+        </p>
+
+        <img src="images/tabs.svg" alt="">
+
+        <h3>Layout</h3>
+
+        <p>
+            The only way to display what's written in the CONTENT tab of a page is to insert it in the BODY of a page.
+            To to this, we use the following syntax: <code>%CONTENT%</code>.
+        </p>
+
+        <img src="images/body-content.svg" alt="">
+
+        <p>
+            We can even call up other page's content by specifying an id:
+            <code class="nowrap">%CONTENT?id=<span class="highlight">page_id</span>%</code>.
+        </p>
+
+        <img src="images/multiple-contents.svg">
+
+        <p>
+            Unlike the CONTENT tab, markdown is not interpreted in the BODY.
+            It's an ideal place to put complex HTML that you won't be editing very often.
+        </p>
+
+
+        <h3>Templating</h3>
+
+        <p>
+            There is no such thing as a template in W,
+            as every page can be a template.
+
+            There are 3 types of templates:
+
+            <ul>
+                <li>CSS template</li>
+                <li>BODY template</li>
+                <li>Javascript template</li>
+            </ul> 
+
+            JS and CSS template have the specificity to be reccursive,
+            which means that templates can be set as a chain.
+        </p>
+
+        <h3>Menus</h3>
+
+        <p>
+            If you need to have a menu (a list of page links displayed on many pages),
+            W can help you with the LIST tool.
+        </p>
+
+        <div class="block">
+            <code>
+                %LIST%
+            </code>
+        </div>
+
+        <p>
+            The code above will print an HTML list of all the pages in the database.
+            This is very basic.
+            This tool can use the sames filtering and sorting as in the Home interface.
+        </p>
+
+
+        <div class="block">
+            <code>
+                %LIST?tagfilter[]=<span class="highlight">article</span>%
+            </code>
+        </div>
+
+        <p>
+            The code above will list all pages that have the tag <span class="highlight">article</span>
+        </p>
+
+        <h3>Metadata inclusion</h3>
+
+        <p>
+            It's also possible to inject metadatas.
+            Here are some examples:
+
+            <ul>
+                <li><code>%TITLE%</code> title of the page</li>
+                <li><code>%DESCRITION%</code> description of the page</li>
+                <li><code>%VISITCOUNT%</code> number of page visits</li>
+                <li><code>%DATEMODIF%</code> date of last edition</li>
+                <li><code>%SUMMARY%</code> table of content based on headings</li>
+            </ul>
+        </p>
+
+
+
+
+        <div class="next">
+            <ul>
+                <li>
+                    ➡️ continue reading: 
+                    <a href="archives.html">archives</a>
+                </li>
+                <li>
+                    ⬆️
+                    <a href="#title">back to top</a>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <h4>Fonts</h4>
+        <p>
+            <strong>Karrik</strong> by Jean-Baptiste Morizot, Lucas Le Bihan. Distributed by velvetyne.fr.
+            <br>
+            <strong>ABeeZee</strong> by Anja Meiners
+        </p>
+    </footer>
+</body>
+</html>

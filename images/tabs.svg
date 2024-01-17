@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="304pt" height="116pt" viewBox="0.00 0.00 303.82 116.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<title>g</title>
+<!-- content -->
+<g id="node1" class="node">
+<title>content</title>
+<polygon fill="none" stroke="#000000" points="57.316,-108 11.8944,-108 11.8944,-112 -.1056,-112 -.1056,-72 57.316,-72 57.316,-108"/>
+<polyline fill="none" stroke="#000000" points="-.1056,-108 11.8944,-108 "/>
+<text text-anchor="middle" x="28.6052" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">content</text>
+</g>
+<!-- css -->
+<g id="node2" class="node">
+<title>css</title>
+<polygon fill="none" stroke="#000000" points="129.6052,-108 87.6052,-108 87.6052,-112 75.6052,-112 75.6052,-72 129.6052,-72 129.6052,-108"/>
+<polyline fill="none" stroke="#000000" points="75.6052,-108 87.6052,-108 "/>
+<text text-anchor="middle" x="102.6052" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">css</text>
+</g>
+<!-- cssfile -->
+<g id="node3" class="node">
+<title>cssfile</title>
+<polygon fill="none" stroke="#000000" points="128.1634,-36 71.047,-36 71.047,0 134.1634,0 134.1634,-30 128.1634,-36"/>
+<polyline fill="none" stroke="#000000" points="128.1634,-36 128.1634,-30 "/>
+<polyline fill="none" stroke="#000000" points="134.1634,-30 128.1634,-30 "/>
+<text text-anchor="middle" x="102.6052" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">CSS file</text>
+</g>
+<!-- css&#45;&gt;cssfile -->
+<g id="edge1" class="edge">
+<title>css-&gt;cssfile</title>
+<path fill="none" stroke="#000000" d="M102.6052,-71.8314C102.6052,-64.131 102.6052,-54.9743 102.6052,-46.4166"/>
+<polygon fill="#000000" stroke="#000000" points="106.1053,-46.4132 102.6052,-36.4133 99.1053,-46.4133 106.1053,-46.4132"/>
+</g>
+<!-- BODY -->
+<g id="node4" class="node">
+<title>BODY</title>
+<polygon fill="none" stroke="#000000" points="207.2627,-108 163.9477,-108 163.9477,-112 151.9477,-112 151.9477,-72 207.2627,-72 207.2627,-108"/>
+<polyline fill="none" stroke="#000000" points="151.9477,-108 163.9477,-108 "/>
+<text text-anchor="middle" x="179.6052" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">BODY</text>
+</g>
+<!-- HTML -->
+<g id="node5" class="node">
+<title>HTML</title>
+<polygon fill="none" stroke="#000000" points="201.2627,-36 151.9477,-36 151.9477,0 207.2627,0 207.2627,-30 201.2627,-36"/>
+<polyline fill="none" stroke="#000000" points="201.2627,-36 201.2627,-30 "/>
+<polyline fill="none" stroke="#000000" points="207.2627,-30 201.2627,-30 "/>
+<text text-anchor="middle" x="179.6052" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">HTML</text>
+</g>
+<!-- BODY&#45;&gt;HTML -->
+<g id="edge2" class="edge">
+<title>BODY-&gt;HTML</title>
+<path fill="none" stroke="#000000" d="M179.6052,-71.8314C179.6052,-64.131 179.6052,-54.9743 179.6052,-46.4166"/>
+<polygon fill="#000000" stroke="#000000" points="183.1053,-46.4132 179.6052,-36.4133 176.1053,-46.4133 183.1053,-46.4132"/>
+</g>
+<!-- javascript -->
+<g id="node6" class="node">
+<title>javascript</title>
+<polygon fill="none" stroke="#000000" points="296.0273,-108 237.1831,-108 237.1831,-112 225.1831,-112 225.1831,-72 296.0273,-72 296.0273,-108"/>
+<polyline fill="none" stroke="#000000" points="225.1831,-108 237.1831,-108 "/>
+<text text-anchor="middle" x="260.6052" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">javascript</text>
+</g>
+<!-- js -->
+<g id="node7" class="node">
+<title>js</title>
+<polygon fill="none" stroke="#000000" points="281.6052,-36 233.6052,-36 233.6052,0 287.6052,0 287.6052,-30 281.6052,-36"/>
+<polyline fill="none" stroke="#000000" points="281.6052,-36 281.6052,-30 "/>
+<polyline fill="none" stroke="#000000" points="287.6052,-30 281.6052,-30 "/>
+<text text-anchor="middle" x="260.6052" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">JS file</text>
+</g>
+<!-- javascript&#45;&gt;js -->
+<g id="edge3" class="edge">
+<title>javascript-&gt;js</title>
+<path fill="none" stroke="#000000" d="M260.6052,-71.8314C260.6052,-64.131 260.6052,-54.9743 260.6052,-46.4166"/>
+<polygon fill="#000000" stroke="#000000" points="264.1053,-46.4132 260.6052,-36.4133 257.1053,-46.4133 264.1053,-46.4132"/>
+</g>
+</g>
+</svg>

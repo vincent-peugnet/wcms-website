@@ -1,0 +1,27 @@
+# used for images/graph-example.svg
+# Generated with https://edotor.net/ and layout dot
+digraph g {
+    rankdir=LR
+
+	bgcolor=transparent;
+
+
+    subgraph clusterP1 {
+        label="Page 1"
+        p1content [label=content,shape=tab]
+    }
+
+    p1content -> BODY
+
+    subgraph clusterP2 {
+        label="Page 2"
+        p2content [label=content,shape=tab]
+        BODY [shape=tab]
+        p2content -> BODY
+    }
+        BODY -> render
+
+ 
+    render -> HTML
+    HTML [shape=note]
+}

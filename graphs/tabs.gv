@@ -1,0 +1,17 @@
+# used for images/graph-example.svg
+# Generated with https://edotor.net/ and layout dot
+digraph g {
+    rankdir=TD;
+	bgcolor=transparent;
+    node [shape=tab]
+
+    content
+    css -> cssfile
+    BODY -> HTML
+    javascript -> js
+    
+    cssfile [label="CSS file",shape=note]
+    HTML [shape=note]
+    js [label="JS file",shape=note]
+
+}

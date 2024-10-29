@@ -222,3 +222,7 @@ p button {
     padding: 0;
     list-style: none;
 }
+
+a {
+    color: hsl(13 96% 24% / 1);
+}

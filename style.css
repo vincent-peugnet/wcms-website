@@ -185,6 +185,10 @@ code.nowrap {
     white-space: nowrap;
 }
 
+code.matrix {
+    user-select: all;
+}
+
 
 main.archives {
     max-width: 800px;
@@ -225,4 +229,9 @@ p button {
 
 a {
     color: hsl(13 96% 24% / 1);
+}
+
+::selection {
+    color: white;
+    background: hsl(13 96% 24% / 1);
 }

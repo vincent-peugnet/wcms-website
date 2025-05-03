@@ -165,7 +165,7 @@
         🔩 Installation
         <a href="#installation">#</a>
       </h2>
-      <strong>Requirements :</strong>
+      <h3>Requirements</h3>
       <ul>
         <li>Apache server</li>
         <li>PHP >=7.4.0 and the following extensions:
@@ -174,34 +174,104 @@
           <code>xml</code>
           <code>intl</code></li>
         <li>optionnal PHP extensions:
-          <code>gd</code>
+          <code>gd</code> or
           <code>imagick</code></li>
       </ul>
       <p>
-        💡 W can run in a domain subfolder.
+        💡 W can run in a domain subfolder. (example: <code>https://mydomain.com/wiki/</code> )
+      </p>
+
+      <h3>Install</h3>
+      <p>
+        There is two methods to install W,
+        the first way is the simplest, but the second makes it easier to update.
+      </p>
+      
+      <details>
+        <summary>Manually (by downloading a Zip file)</summary>
+        <p>
+          Download the latest <b>W</b> version:
+          Go to the
+          <a href="https://github.com/vincent-peugnet/wcms/releases/latest" target="_blank">latest release page</a>
+          and under the "Assets" section, download the main Zip file (not the source code).
+
+        </p>
+        <p>
+          Unzip the content and upload it to your server.
+        </p>
+      </details>
+
+      <details>
+        <summary>Using Git</summary>
+        <p>
+          Clone the repo:
+          <code class="copy">
+            https://github.com/vincent-peugnet/wcms.git
+          </code>
       </p>
       <p>
-        Download the lastest
-        <b>W</b>
-        version, to use on your server:
-        <br>
-        📦
-        <a href="https://github.com/vincent-peugnet/wcms/releases/latest" download="">
-          download zip file
-        </a>
-      </p>
-      <p>
-        Or install it using
-        <code>git</code>:
-        <br>🎋
+        It is recommended to stick to a released commit. Checkout
+        <a href="https://github.com/vincent-peugnet/wcms/releases/latest">latest release</a> number and then type:
         <code>
-          https://github.com/vincent-peugnet/wcms.git
+          git checkout VERSION
         </code>
-        <br>
+        where VERSION is the choosed release name (ex: <code>v3.8.0</code>)
+      </p>
+      <p>
         Then, type
         <code>make</code>
-        to "build" the app.
+        to run the build.
       </p>
+    </details>
+
+    <p>
+      Finally, open in your Web browser the URL that is supposed to serve W.
+      A form will ask you a few questions in order to have a functionnal setup.
+      During this initialization, an admin user is created and you'll be able to login using this account.
+    </p>
+
+    <h3>Update</h3>
+
+    <p>
+      Depending on how W is installed,
+      you should follow the corresponding method.
+    </p>
+
+
+    <details>
+      <summary>Manual update</summary>
+      <p>
+        First, <strong>you have to backup some files and folders</strong> (copy them elsewhere temporarily).
+      </p>
+      <ul>
+        <li><code>📁&nbsp;databases/</code></li>
+        <li><code>📁&nbsp;media/</code></li>
+        <li><code>📄&nbsp;config.json</code></li>
+      </ul>
+      <p>
+        When you're sure they are safe, delete all W's current install content.
+      </p>
+      <p>
+        Then, download the <a href="https://github.com/vincent-peugnet/wcms/releases/latest" target="_blank">latest release</a> Zip (under "Assets"),
+        unzip it,
+        and copy the files in order to replace the old ones in your install folder.
+      </p>
+      <p>
+        Finaly, copy back the three backuped paths
+        (<code>📁&nbsp;databases</code>, <code>📁&nbsp;media</code> and <code>📄&nbsp;config.json</code>).
+      </p>
+    </details>
+    <details>
+      <summary>Using Git</summary>
+      <p>
+        If you've installed W <strong>using Git</strong>,
+        you can run <code>git pull</code> and then repeat the same steps as the install process:
+        checkout a specific VERSION and don't forget to run <code>make</code> in the end !
+      </p>
+    </details>
+
+
+
       <h2 id="contact">
         🤙 Contact
         <a href="#contact">#</a>
@@ -216,7 +286,7 @@
         There is a Matrix Room, feel free to ask questions in english or french.
       </p>
       <a href="matrix:r/w-cms:club1.fr">Matrix</a>
-      <code class="matrix">#w-cms:club1.fr</code>
+      <code class="copy">#w-cms:club1.fr</code>
 
 
 

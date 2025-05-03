@@ -185,8 +185,25 @@ code.nowrap {
     white-space: nowrap;
 }
 
-code.matrix {
+code.copy {
     user-select: all;
+}
+
+details {
+    border: solid 1px #781c023d;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+summary {
+    background: hsl(34deg 100% 84.2%);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+details p {
+    margin: 15px 10px;
 }
 
 

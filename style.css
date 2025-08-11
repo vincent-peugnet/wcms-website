@@ -8,8 +8,15 @@
     src: url(fonts/ABeeZee-Regular.woff2);
 }
 
+:root {
+    --background-color: antiquewhite;
+    --accent-color: hsl(13, 97%, 24%);
+    --border-color: #781c023d;
+    --secondary-background: hsl(34deg 100% 84.2%);
+}
+
 body {
-    background-color: antiquewhite;
+    background-color: var(--background-color);
     font-family: ABeeZee;
     margin-bottom: 500px;
 }
@@ -190,13 +197,13 @@ code.copy {
 }
 
 details {
-    border: solid 1px #781c023d;
+    border: solid 1px var(--border-color);
     border-radius: 10px;
     margin: 5px;
 }
 
 summary {
-    background: hsl(34deg 100% 84.2%);
+    background: var(--secondary-background);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -245,10 +252,10 @@ p button {
 }
 
 a {
-    color: hsl(13 96% 24% / 1);
+    color: var(--accent-color);
 }
 
 ::selection {
     color: white;
-    background: hsl(13 96% 24% / 1);
+    background: var(--accent-color);
 }

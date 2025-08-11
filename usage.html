@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <title>W - usage</title>
 </head>
+
 <body>
     <header>
         <h1 id="title">W</h1>
@@ -22,6 +24,12 @@
             </li>
             <li>
                 💬 <a href="matrix:r/w-cms:club1.fr">Matrix: #w-cms:club1.fr</a>
+            </li>
+            <li>
+                🔃
+                <a href="wsync/index.html">
+                    Wsync
+                </a>
             </li>
         </ul>
     </header>
@@ -53,7 +61,8 @@
 
         <p>
             The page is the main unit of W.
-            Each page is associated with an <span class="highlight">identifier</span>, which is also the address of your page.
+            Each page is associated with an <span class="highlight">identifier</span>, which is also the address of your
+            page.
             It can only be made up of lowercase characters, hyphens or underscores.
             To access a page, type its identifier after the domain name or subfolder in which W is installed.
         </p>
@@ -69,7 +78,7 @@
         </h3>
 
         <p>
-            
+
             There is no hierarchy between pages: in W, all pages are equal.
             It's impossible to create subdirectories.
             The structure is only driven by links that exist or not between pages.
@@ -91,7 +100,7 @@
             By default, there is no home page in W.
             This is usefull if you want your website to store many different things.
             But if you are building a more conventionnal website,
-            you can choose to redirect root directory to one of your pages. 
+            you can choose to redirect root directory to one of your pages.
         </p>
 
 
@@ -114,24 +123,28 @@
         <p>
             From here, you can write the content of your page using Markdown.
             To save your page, click on <button>update</button> or use the <kbd>CTRL</kbd> + <kbd>S</kbd> keys.
-            You can then display the result by clicking on the eye button, or using the <kbd>CTRL</kbd> + <kbd>D</kbd> keys.
+            You can then display the result by clicking on the eye button, or using the <kbd>CTRL</kbd> + <kbd>D</kbd>
+            keys.
             The page will be displayed in a new tab.
         </p>
 
         <p>
-            When we make new modifications from the editing interface and click on "display", if our page's tab is still open, it will be re-used.
+            When we make new modifications from the editing interface and click on "display", if our page's tab is still
+            open, it will be re-used.
             So there's no need to close it each time.
         </p>
-        
+
         <p>
-            You may have noticed that the address of the editing interface corresponds to our page identifier followed by <code>/edit</code>.
+            You may have noticed that the address of the editing interface corresponds to our page identifier followed
+            by <code>/edit</code>.
             You can edit any of your pages this way.
             If you're not logged in, you'll be asked for your login details.
             Editing tabs are highlighted by a pencil symbol before the page title.
-            If changes have been made but not saved, an asterisk appears in front of the page ID in the interface and in front of the tab title.
+            If changes have been made but not saved, an asterisk appears in front of the page ID in the interface and in
+            front of the tab title.
             And if you try to close the tab, a prevention message will appear.
         </p>
-            
+
 
         <h2 id="create-a-link">
             🔗 Create a link
@@ -139,10 +152,12 @@
         </h2>
 
         <p>
-            To create links to other Web sites, you can of course use Markdown syntax, or even HTML directly, if you want more customization.
+            To create links to other Web sites, you can of course use Markdown syntax, or even HTML directly, if you
+            want more customization.
             External links are those pointing to another site and beginning with <code>https://</code>.
             Internal links are those that lead to other pages on your W.
-            To make internal links, you can still use Markdown or HTML. The page identifier is used as the target of the link.
+            To make internal links, you can still use Markdown or HTML. The page identifier is used as the target of the
+            link.
         </p>
 
         <p>
@@ -154,10 +169,12 @@
         <img src="images/kitchen.gif" alt="" class="gif">
 
         <p>
-            When you arrive at an identifier that does not correspond to any page, you receive an alert message: “this page does not exist yet”.
+            When you arrive at an identifier that does not correspond to any page, you receive an alert message: “this
+            page does not exist yet”.
             This message is customizable in the administration interface.
             When you are connected as an editor, a <button>⭐ create</button> button is also displayed.
-            Clicking on it is another possible way to create a page equivalent to typing <code>/add</code> after the identifier in the address bar.
+            Clicking on it is another possible way to create a page equivalent to typing <code>/add</code> after the
+            identifier in the address bar.
         </p>
 
         <h2 id="home-interface">
@@ -175,7 +192,8 @@
         <img src="images/home.gif" alt="" class="gif">
 
         <p>
-            This interface has powerful filtering tools which will later allow you to generate menus to integrate on your pages.
+            This interface has powerful filtering tools which will later allow you to generate menus to integrate on
+            your pages.
         </p>
 
 
@@ -247,14 +265,14 @@
 
             There are 3 types of templates:
 
-            <ul>
-                <li>CSS template</li>
-                <li>BODY template</li>
-                <li>Javascript template</li>
-            </ul> 
+        <ul>
+            <li>CSS template</li>
+            <li>BODY template</li>
+            <li>Javascript template</li>
+        </ul>
 
-            JS and CSS template have the specificity to be reccursive,
-            which means that templates can be set as a chain.
+        JS and CSS template have the specificity to be reccursive,
+        which means that templates can be set as a chain.
         </p>
 
         <h3>Menus</h3>
@@ -293,13 +311,13 @@
             It's also possible to inject metadatas.
             Here are some examples:
 
-            <ul>
-                <li><code>%TITLE%</code> title of the page</li>
-                <li><code>%DESCRITION%</code> description of the page</li>
-                <li><code>%VISITCOUNT%</code> number of page visits</li>
-                <li><code>%DATEMODIF%</code> date of last edition</li>
-                <li><code>%SUMMARY%</code> table of content based on headings</li>
-            </ul>
+        <ul>
+            <li><code>%TITLE%</code> title of the page</li>
+            <li><code>%DESCRITION%</code> description of the page</li>
+            <li><code>%VISITCOUNT%</code> number of page visits</li>
+            <li><code>%DATEMODIF%</code> date of last edition</li>
+            <li><code>%SUMMARY%</code> table of content based on headings</li>
+        </ul>
         </p>
 
 
@@ -308,7 +326,7 @@
         <div class="next">
             <ul>
                 <li>
-                    ➡️ continue reading: 
+                    ➡️ continue reading:
                     <a href="archives.html">archives</a>
                 </li>
                 <li>

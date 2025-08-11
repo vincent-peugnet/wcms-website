@@ -107,6 +107,10 @@ header h1 {
     display: inline;
 }
 
+header h1 small {
+    font-size: 0.5em;
+}
+
 li {
     margin: 10px 0;
 }

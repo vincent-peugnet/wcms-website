@@ -261,3 +261,8 @@ a {
     color: white;
     background: var(--accent-color);
 }
+
+/* Fix for uncontrasted terminal video capture */
+.uncontrasted {
+    filter: contrast(1.6) brightness(0.8);
+}

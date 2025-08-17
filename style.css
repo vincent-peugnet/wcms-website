@@ -86,11 +86,6 @@ img.gif, video {
     width: 100%;
 }
 
-header img {
-    width: 100%;
-    max-width: 400px;
-}
-
 nav ol {
     list-style: none;
     padding: 0;
@@ -120,9 +115,18 @@ ul {
 header ul {
     display: inline-block;
     list-style: none;
-    padding-inline-start: 30px;
+    padding-inline-start: 0;
 }
 
+header {
+    display: flex;
+    align-items: flex-start;
+    max-width: 600px;
+}
+
+header > * {
+    width: 50%;
+}
 
 
 main h2 a {
@@ -270,4 +274,8 @@ a {
 /* Fix for uncontrasted terminal video capture */
 .uncontrasted {
     filter: contrast(1.6) brightness(0.8);
+}
+
+span.unbreakable {
+    text-wrap-mode: nowrap;
 }

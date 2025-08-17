@@ -213,6 +213,7 @@ summary {
 
 details p {
     margin: 15px 10px;
+    text-align: left;
 }
 
 
@@ -222,6 +223,10 @@ main.archives {
 
 footer {
     font-size: 0.8em;
+}
+
+footer p {
+    text-align: left;
 }
 
 kbd {

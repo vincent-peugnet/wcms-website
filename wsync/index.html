@@ -51,7 +51,26 @@
     </h2>
 
     <p>
-      Very inspired by Git command.
+      W<small>sync</small> Is a <abbr title="Command Line interface">CLI</abbr>
+      synchronization client for the <a href="..">W</a> wiki engine.
+      It mostly target advanced users.
+    </p>
+
+    <p>
+      <strong>Goals are:</strong>
+    </p>
+    <ul>
+      <li>allowing offline editing of wiki content</li>
+      <li>letting users use their favorite mardown/text editor</li>
+      <li>making editing compatible with version control software</li>
+    </ul>
+    <p>
+      Usage is only documented in the <a href="https://github.com/vincent-peugnet/wsync/blob/master/README.md">README</a>.
+    </p>
+
+    <p>
+      Interface is very inspired by the <em>Git</em> command.
+      Page primary content of selected pages is saved as markdown <code>.md</code> file in a local folder.
     </p>
 
     <h2 id="screenshots">
@@ -59,13 +78,18 @@
       <a href="#screenshots">#</a>
     </h2>
 
+    <p>Better than screenshots, a little demo video:</p>
+
+    <video src="images/wsync-demo.webm" controls></video>
 
     <h2 id="installation">
       🔩 Installation
       <a href="#installation">#</a>
     </h2>
 
-
+    <p>
+      Download the binary file that match your OS:
+    </p>
 
     <details name="os">
       <summary>🐧 Linux</summary>
@@ -87,9 +111,6 @@
         <a href="https://github.com/vincent-peugnet/wsync/releases/latest/download/wsync-linux-arm64">
           wsync-linux-arm64
         </a>
-      </p>
-      <p>
-        Unzip the content and upload it to your server.
       </p>
     </details>
 
@@ -114,9 +135,6 @@
           wsync-macos-amd64
         </a>
       </p>
-      <p>
-        Unzip the content and upload it to your server.
-      </p>
     </details>
 
     <details name="os">
@@ -128,10 +146,19 @@
           wsync-windows-amd64.exe
         </a>
       </p>
-      <p>
-        Unzip the content and upload it to your server.
-      </p>
     </details>
+
+
+    <p>
+      Add it to your PATH renamed as <code>wsync</code> and make it executable.
+    </p>
+    <p>
+      For example, on linux, you can put it inside <code>~/.local/bin/</code>.
+      And make it exacutable using <code>chmod +x wsync</code> (once renamed as <code>wsync</code>).
+      The command will then be only accessible by your user.
+    </p>
+
+
 
     <h3>Building from sources</h3>
 

@@ -181,7 +181,6 @@ code {
 }
 
 .block code {
-    background: ;
     display: block;
     padding: 10px;
     font-size: 1.3em;
@@ -218,6 +217,14 @@ summary {
 details p {
     margin: 15px 10px;
     text-align: left;
+}
+
+blockquote {
+    border: solid 1px var(--border-color);
+    border-left-width: 5px;
+    padding: 10px;
+    margin: 15px 20px;
+    border-radius: 10px;
 }
 
 

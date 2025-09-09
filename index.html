@@ -169,8 +169,11 @@
       </h2>
       <h3>Requirements</h3>
       <ul>
-        <li>Apache server</li>
-        <li>PHP >=7.4.0 and the following extensions:
+        <li>
+          <strong>Apache server</strong> with <code>.htaccess</code> and <code>modrewrite</code> enabled.
+          (which is the case on most Webhosts)
+        </li>
+        <li><strong>PHP >=7.4.0</strong> and the following extensions:
           <code>curl</code>
           <code>mbstring</code>
           <code>xml</code>
@@ -206,6 +209,9 @@
       <details name="install">
         <summary>Using Git</summary>
         <p>
+          To build W, you'll need <code>composer</code> and <code>npm</code> package managers.
+        </p>
+        <p>
           Clone the repo:
           <code class="copy">
             https://github.com/vincent-peugnet/wcms.git
@@ -225,6 +231,15 @@
         to run the build.
       </p>
     </details>
+
+    <blockquote>
+      <h4>🦺 Permissions</h4>
+
+      <p>
+        The following folders and files need <strong>read and write</strong> access:<br>
+        <code>assets databases media render config.json w_error.log</code>
+      </p>
+    </blockquote>
 
     <p>
       Finally, open in your Web browser the URL that is supposed to serve W.

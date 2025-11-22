@@ -1,405 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="W is a lightweight CMS wiki tool, meant to help you design a surprising website.">
-  <meta name="keywords" content="wiki, cms, web, php, Vincent Peugnet">
-  <meta name="author" content="Vincent Peugnet">
-  <link rel="stylesheet" href="style.css">
-  <title>W</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="W is a lightweight CMS wiki tool, meant to help you design a surprising website.">
+		<meta name="keywords" content="wiki, cms, web, php, Vincent Peugnet">
+		<meta name="author" content="Vincent Peugnet">
+		<link rel="stylesheet" href="style.css">
+		<title>W</title>
+	</head>
 
-<body>
-  <header>
-    <h1 id="title">W</h1>
-    <ul>
-      <li>
-        🔃
-        <a href="wsync/index.html">
-          W<small>sync</small>
-        </a>
-      </li>
-      <li>
-        😺
-        <a href="https://github.com/vincent-peugnet/wcms">
-          Gihub
-        </a>
-      </li>
-      <li>
-        💬
-        <a href="matrix:r/w-cms:club1.fr">Matrix: <span class="unbreakable">#w-cms:club1.fr</span></a>
-      </li>
-    </ul>
-  </header>
-  <nav>
-    <ol>
-      <li>[<a href="index.html">home</a>]</li>
-      <li><a href="usage.html">usage</a></li>
-      <li><a href="archives.html">archives</a></li>
-    </ol>
-    <ul>
-      <li>🧭
-        <a href="#presentation">presentation</a>
-      </li>
-      <li>📷
-        <a href="#screenshots">screenshots</a>
-      </li>
-      <li>🔩
-        <a href="#installation">installation</a>
-      </li>
-      <li>🤙
-        <a href="#contact">contact</a>
-      </li>
-      <li>❤️‍🔥
-        <a href="#acknowledgment">acknowledgment</a>
-      </li>
-    </ul>
-  </nav>
-  <main>
-    <h2 id="presentation">
-      🧭 Presentation
-      <a href="#presentation">#</a>
-    </h2>
-    <p>
-      W is a lightweight CMS tool, meant to help you design a surprising website.
-      Compared to other CMS, W tries to help spontaneity and for building heterogeneous web-spaces.
-    </p>
-    <p>
-      The project was initiated in 2018 by Vincent Peugnet which is an amateur computer scientist.
-      It's developed on a voluntary basis, use PHP and is licensed under AGPLv3.
-    </p>
-    <p>
-      W is a
-      <a href="https://fr.wikipedia.org/wiki/Wiki">wiki</a>.
-      <em>Wikis</em>
-      are a type of Web building tools that encourage quick and easy edit of pages.
-      <br>
-      It's also inspired from
-      <a href="https://en.wikipedia.org/wiki/Personal_knowledge_management">personnal knowledge management (PKM)</a>
-      theory.
-      <br>
-      W is at the intersection of a website editor and a note-taking tool.
-      This is both its advantage and its drawback: it can do both, but is limited in each direction.
-    </p>
-    <p>
-      That being said, W has some interesting features and a specific approach, that might interest some strange web
-      builders.
-    </p>
-    <h3>
-      ✨ highlights
-    </h3>
-    <ul>
-      <li>Lightweight</li>
-      <li>Easy to edit on mobile.</li>
-      <li>Use standards: Markdown, HTML, CSS and Javascript.</li>
-      <li>Multi users</li>
-      <li>Flat file database</li>
-      <li>RSS feed (Atom)</li>
-      <li>Fully functionnal without javascript</li>
-      <li>LDAP authentication</li>
-      <li>Many <a href="#themes">interface themes</a>! (and it's very easy to create your's)</li>
-      <li>A CLI synchronization client exist: <a href="wsync/index.html">W<small>sync</small></a></li>
-    </ul>
-    <h3>
-      🚧 Limitations
-    </h3>
-    <ul>
-      <li>The interface and user manual is only available in english.</li>
-      <li>
-        not suited for big projects:<br>
-        it has never been tested with a large page quantity (more than 1000 pages).
-      </li>
-      <li>It's also not recommended for multi-language websites.</li>
-      <li>W is not version control friendly.</li>
-    </ul>
-    <h3>📰 Articles</h3>
-    <p>
-      In January 2025, Nosycat wrote a nice blog post: <a
-        href="https://nosycat.notimetoplay.org/pmwiki.php/Blog/WeirdWebW" target="_blank">Make weird websites with
-        W</a>.
-    </p>
-    <h2 id="screenshots">
-      📷 Screenshots
-      <a href="#screenshots">#</a>
-    </h2>
-    <h3>Desktop</h3>
-    <figure class="pc">
-      <img src="images/home.png" alt="">
-      <figcaption>
-        <h4>
-          Home interface
-        </h4>
-        <p>
-          The home interface, is where editors can see all their pages.
-          You can apply filters to view your pages.
-          Those sames filters can be used to generated codes that can be pasted in the pages to create list of pages.
-        </p>
-      </figcaption>
-    </figure>
-    <figure class="pc">
-      <img src="images/edit.png" alt="">
-      <figcaption>
-        <h4>
-          Edit interface
-        </h4>
-        <p>
-          Edit the content of a page. A side panel is used to edit metadatas.
-        </p>
-      </figcaption>
-    </figure>
-    <figure class="pc">
-      <img src="images/media.png" alt="">
-      <figcaption>
-        <h4>
-          Media manager
-        </h4>
-        <p>
-          Upload images from your device or from an URL. Create folders, move and rename your media files.
-        </p>
-      </figcaption>
-    </figure>
-    <h3>Mobile interface</h3>
-    <img src="images/15.png" alt="" class="mobile">
-    <img src="images/16.png" alt="" class="mobile">
-    <p>
-      W tries to be comfortable on mobile.
-    </p>
-    <h3 id="themes">Themes</h3>
-    <figure class="pc">
-      <img src="images/themes.gif" alt="cycling through different W themes">
-      <figcaption>
-        <p>Themes are here to set the mood. And it's very easy to create a custom one 😉</p>
-      </figcaption>
-    </figure>
-    <h2 id="installation">
-      🔩 Installation
-      <a href="#installation">#</a>
-    </h2>
-    <h3>Requirements</h3>
-    <ul>
-      <li>
-        <strong>Apache server</strong> with <code>.htaccess</code> and <code>modrewrite</code> enabled.
-        (which is the case on most Webhosts)
-      </li>
-      <li><strong>PHP >=7.4.0</strong> and the following extensions:
-        <code>curl</code>
-        <code>mbstring</code>
-        <code>xml</code>
-        <code>intl</code>
-      </li>
-      <li>optionnal PHP extensions:
-        <code>gd</code> or
-        <code>imagick</code>
-      </li>
-    </ul>
-    <p>
-      💡 W can run in a domain subfolder. (example: <code>https://mydomain.com/wiki/</code> )
-    </p>
+	<body>
+		<header>
+			<h1 id="title">W</h1>
+			<ul>
+				<li>
+					🔃
+					<a href="wsync/index.html">
+						W<small>sync</small>
+					</a>
+				</li>
+				<li>
+					😺
+					<a href="https://github.com/vincent-peugnet/wcms">
+						Gihub
+					</a>
+				</li>
+				<li>
+					💬
+					<a href="matrix:r/w-cms:club1.fr">Matrix: <span class="unbreakable">#w-cms:club1.fr</span></a>
+				</li>
+			</ul>
+		</header>
+		<nav>
+			<ol>
+				<li>[<a href="index.html">home</a>]</li>
+				<li><a href="usage.html">usage</a></li>
+				<li><a href="archives.html">archives</a></li>
+			</ol>
+			<ul>
+				<li>🧭
+					<a href="#presentation">presentation</a></li>
+				<li>📷
+					<a href="#screenshots">screenshots</a></li>
+				<li>🔩
+					<a href="#installation">installation</a></li>
+				<li>🤙
+					<a href="#contact">contact</a></li>
+				<li>❤️‍🔥
+					<a href="#acknowledgment">acknowledgment</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2 id="presentation">
+				🧭 Presentation
+				<a href="#presentation">#</a>
+			</h2>
+			<p>
+				W is a lightweight CMS tool, meant to help you design a surprising website.
+				Compared to other CMS, W tries to help spontaneity and for building heterogeneous web-spaces.
+			</p>
+			<p>
+				The project was initiated in 2018 by Vincent Peugnet which is an amateur computer scientist.
+				It's developed on a voluntary basis, use PHP and is licensed under AGPLv3.
+			</p>
+			<p>
+				W is a
+				<a href="https://fr.wikipedia.org/wiki/Wiki">wiki</a>.
+				<em>Wikis</em>
+				are a type of Web building tools that encourage quick and easy edit of pages.
+				<br>
+				It's also inspired from
+				<a href="https://en.wikipedia.org/wiki/Personal_knowledge_management">personnal knowledge management (PKM)</a>
+				theory.
+				<br>
+				W is at the intersection of a website editor and a note-taking tool.
+				This is both its advantage and its drawback: it can do both, but is limited in each direction.
+			</p>
+			<p>
+				That being said, W has some interesting features and a specific approach, that might interest some strange web
+				builders.
+			</p>
+			<h3>
+				✨ highlights
+			</h3>
+			<ul>
+				<li>Lightweight</li>
+				<li>Easy to edit on mobile.</li>
+				<li>Use standards: Markdown, HTML, CSS and Javascript.</li>
+				<li>Multi users</li>
+				<li>Flat file database</li>
+				<li>RSS feed (Atom)</li>
+				<li>Fully functionnal without javascript</li>
+				<li>LDAP authentication</li>
+				<li>Many <a href="#themes">interface themes</a>! (and it's very easy to create your's)</li>
+				<li>A CLI synchronization client exist: <a href="wsync/index.html">W<small>sync</small></a></li>
+			</ul>
+			<h3>
+				🚧 Limitations
+			</h3>
+			<ul>
+				<li>The interface and user manual is only available in english.</li>
+				<li>
+					not suited for big projects:<br>
+					it has never been tested with a large page quantity (more than 1000 pages).
+				</li>
+				<li>It's also not recommended for multi-language websites.</li>
+				<li>W is not version control friendly.</li>
+			</ul>
+			<h3>📰 Articles</h3>
+			<p>
+				In January 2025, Nosycat wrote a nice blog post: <a href="https://nosycat.notimetoplay.org/pmwiki.php/Blog/WeirdWebW" target="_blank">Make weird websites with
+					W</a>.
+			</p>
+			<h2 id="screenshots">
+				📷 Screenshots
+				<a href="#screenshots">#</a>
+			</h2>
+			<h3>Desktop</h3>
+			<figure class="pc">
+				<img src="images/home.png" alt="">
+				<figcaption>
+					<h4>
+						Home interface
+					</h4>
+					<p>
+						The home interface, is where editors can see all their pages.
+						You can apply filters to view your pages.
+						Those sames filters can be used to generated codes that can be pasted in the pages to create list of pages.
+					</p>
+				</figcaption>
+			</figure>
+			<figure class="pc">
+				<img src="images/edit.png" alt="">
+				<figcaption>
+					<h4>
+						Edit interface
+					</h4>
+					<p>
+						Edit the content of a page. A side panel is used to edit metadatas.
+					</p>
+				</figcaption>
+			</figure>
+			<figure class="pc">
+				<img src="images/media.png" alt="">
+				<figcaption>
+					<h4>
+						Media manager
+					</h4>
+					<p>
+						Upload images from your device or from an URL. Create folders, move and rename your media files.
+					</p>
+				</figcaption>
+			</figure>
+			<h3>Mobile interface</h3>
+			<img src="images/15.png" alt="" class="mobile">
+			<img src="images/16.png" alt="" class="mobile">
+			<p>
+				W tries to be comfortable on mobile.
+			</p>
+			<h3 id="themes">Themes</h3>
+			<figure class="pc">
+				<img src="images/themes.gif" alt="cycling through different W themes">
+				<figcaption>
+					<p>Themes are here to set the mood. And it's very easy to create a custom one 😉</p>
+				</figcaption>
+			</figure>
+			<h2 id="installation">
+				🔩 Installation
+				<a href="#installation">#</a>
+			</h2>
+			<h3>Requirements</h3>
+			<ul>
+				<li>
+					One of the following <strong>Web server</strong>:
+					<ul>
+						<li>
+							<strong>Apache server</strong>
+							with <code>.htaccess</code>
+							and <code>modrewrite</code>
+							enabled.
+							(which is the case on most Webhosts)
+						</li>
+						<li>
+							<strong>Nginx</strong>
+							A sample configuration can be found
+							<a href="https://github.com/vincent-peugnet/wcms?tab=readme-ov-file#nginx">in the README</a>.
+						</li>
+					</ul>
+				</li>
+				<li>
+					<strong>PHP >=7.4.0</strong>
+					and the following extensions:
+					<code>curl</code>
+					<code>mbstring</code>
+					<code>xml</code>
+					<code>intl</code>
+					<ul>
+						<li>
+							optionnal PHP extensions:
+							<code>gd</code>
+							or
+							<code>imagick</code>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				💡 W can run in a domain subfolder. (example: <code>https://mydomain.com/wiki/</code>
+				)
+			</p>
 
-    <h3>Install</h3>
-    <p>
-      There is two methods to install W,
-      the first way is the simplest, but the second makes it easier to update.
-    </p>
+			<h3>Install</h3>
+			<p>
+				There is two methods to install W,
+				the first way is the simplest, but the second makes it easier to update.
+			</p>
 
-    <details name="install">
-      <summary>Manually (by downloading a Zip file)</summary>
-      <p>
-        Download the latest <b>W</b> version:
-        Go to the
-        <a href="https://github.com/vincent-peugnet/wcms/releases/latest" target="_blank">latest release page</a>
-        and under the "Assets" section, download the main Zip file (not the source code).
+			<details name="install">
+				<summary>Manually (by downloading a Zip file)</summary>
+				<p>
+					Download the latest <b>W</b>
+					version:
+					Go to the
+					<a href="https://github.com/vincent-peugnet/wcms/releases/latest" target="_blank">latest release page</a>
+					and under the "Assets" section, download the main Zip file (not the source code).
+				</p>
+				<p>
+					Unzip the content and upload it to your server.
+				</p>
+			</details>
 
-      </p>
-      <p>
-        Unzip the content and upload it to your server.
-      </p>
-    </details>
+			<details name="install">
+				<summary>Using Git</summary>
+				<p>
+					To build W, you'll need <code>composer</code>
+					and <code>npm</code>
+					package managers.
+				</p>
+				<p>
+					Clone the repo:
+					<code class="copy">
+						https://github.com/vincent-peugnet/wcms.git
+					</code>
+				</p>
+				<p>
+					It is recommended to stick to a released commit. Checkout
+					<a href="https://github.com/vincent-peugnet/wcms/releases/latest">latest release</a>
+					number and then type:
+					<code>
+						git checkout VERSION
+					</code>
+					where VERSION is the choosed release name (ex: <code>v3.8.0</code>)
+				</p>
+				<p>
+					Then, type
+					<code>make</code>
+					to run the build.
+				</p>
+			</details>
 
-    <details name="install">
-      <summary>Using Git</summary>
-      <p>
-        To build W, you'll need <code>composer</code> and <code>npm</code> package managers.
-      </p>
-      <p>
-        Clone the repo:
-        <code class="copy">
-            https://github.com/vincent-peugnet/wcms.git
-          </code>
-      </p>
-      <p>
-        It is recommended to stick to a released commit. Checkout
-        <a href="https://github.com/vincent-peugnet/wcms/releases/latest">latest release</a> number and then type:
-        <code>
-          git checkout VERSION
-        </code>
-        where VERSION is the choosed release name (ex: <code>v3.8.0</code>)
-      </p>
-      <p>
-        Then, type
-        <code>make</code>
-        to run the build.
-      </p>
-    </details>
+			<blockquote>
+				<h4>🦺 Permissions</h4>
 
-    <blockquote>
-      <h4>🦺 Permissions</h4>
+				<p>
+					The following folders and files need <strong>read and write</strong>
+					access:<br>
+					<code>assets databases media render config.json w_error.log</code>
+				</p>
+			</blockquote>
 
-      <p>
-        The following folders and files need <strong>read and write</strong> access:<br>
-        <code>assets databases media render config.json w_error.log</code>
-      </p>
-    </blockquote>
+			<p>
+				Finally, open in your Web browser the URL that is supposed to serve W.
+				A form will ask you a few questions in order to have a functionnal setup.
+				During this initialization, an admin user is created and you'll be able to login using this account.
+			</p>
 
-    <p>
-      Finally, open in your Web browser the URL that is supposed to serve W.
-      A form will ask you a few questions in order to have a functionnal setup.
-      During this initialization, an admin user is created and you'll be able to login using this account.
-    </p>
+			<h3>Update</h3>
 
-    <h3>Update</h3>
+			<p>
+				Depending on how W is installed,
+				you should follow the corresponding method.
+			</p>
 
-    <p>
-      Depending on how W is installed,
-      you should follow the corresponding method.
-    </p>
+			<details name="update">
+				<summary>Manual update</summary>
+				<p>
+					First, <strong>you have to backup some files and folders</strong>
+					(copy them elsewhere temporarily).
+				</p>
+				<ul>
+					<li><code>📁&nbsp;databases/</code></li>
+					<li><code>📁&nbsp;media/</code></li>
+					<li><code>📄&nbsp;config.json</code></li>
+				</ul>
+				<p>
+					When you're sure they are safe, delete all W's current install content.
+				</p>
+				<p>
+					Then, download the <a href="https://github.com/vincent-peugnet/wcms/releases/latest" target="_blank">latest
+						release</a>
+					Zip (under "Assets"),
+					unzip it,
+					and copy the files in order to replace the old ones in your install folder.
+				</p>
+				<p>
+					Finaly, copy back the three backuped paths
+					(<code>📁&nbsp;databases</code>, <code>📁&nbsp;media</code>
+					and <code>📄&nbsp;config.json</code>).
+				</p>
+			</details>
+			<details name="update">
+				<summary>Using Git</summary>
+				<p>
+					If you've installed W <strong>using Git</strong>,
+					you can run <code>git pull</code>
+					and then repeat the same steps as the install process:
+					checkout a specific VERSION and don't forget to run <code>make</code>
+					in the end !
+				</p>
+			</details>
 
+			<h2 id="contact">
+				🤙 Contact
+				<a href="#contact">#</a>
+			</h2>
+			<h3>📬 Email</h3>
+			<p>
+				Feel free to email me for any question or sugestion.
+			</p>
+			<a href="mailto:vincent+w@club1.fr">vincent+w@club1.fr</a>
+			<h3>💬 Matrix</h3>
+			<p>
+				There is a Matrix Room, feel free to ask questions in english or french.
+			</p>
+			<a href="matrix:r/w-cms:club1.fr">Matrix</a>
+			<code class="copy">#w-cms:club1.fr</code>
 
-    <details name="update">
-      <summary>Manual update</summary>
-      <p>
-        First, <strong>you have to backup some files and folders</strong> (copy them elsewhere temporarily).
-      </p>
-      <ul>
-        <li><code>📁&nbsp;databases/</code></li>
-        <li><code>📁&nbsp;media/</code></li>
-        <li><code>📄&nbsp;config.json</code></li>
-      </ul>
-      <p>
-        When you're sure they are safe, delete all W's current install content.
-      </p>
-      <p>
-        Then, download the <a href="https://github.com/vincent-peugnet/wcms/releases/latest" target="_blank">latest
-          release</a> Zip (under "Assets"),
-        unzip it,
-        and copy the files in order to replace the old ones in your install folder.
-      </p>
-      <p>
-        Finaly, copy back the three backuped paths
-        (<code>📁&nbsp;databases</code>, <code>📁&nbsp;media</code> and <code>📄&nbsp;config.json</code>).
-      </p>
-    </details>
-    <details name="update">
-      <summary>Using Git</summary>
-      <p>
-        If you've installed W <strong>using Git</strong>,
-        you can run <code>git pull</code> and then repeat the same steps as the install process:
-        checkout a specific VERSION and don't forget to run <code>make</code> in the end !
-      </p>
-    </details>
+			<h2 id="acknowledgment">
+				❤️‍🔥 Acknowledgment
+				<a href="#acknowledgment">#</a>
+			</h2>
 
+			<h3>Contributors</h3>
 
+			<p>
+				W is mainly maintained by <a href="https://246.eu/vincent-peugnet" target="_blank">Vincent Peugnet</a>,
+				with valuable help from <a href="https://nicolas.club1.fr" target="_blank">Nicolas Peugnet</a>,
+				who designed many of the complex workflows that make W less easy to break.
+				In 2024, W's interface was refreshed by <a href="https://www.accentgrave.net/" target="_blank">Julien Bidoret</a>,
+				who used his skills as a developer and designer to make W more welcoming and intuitive.
+			</p>
 
-    <h2 id="contact">
-      🤙 Contact
-      <a href="#contact">#</a>
-    </h2>
-    <h3>📬 Email</h3>
-    <p>
-      Feel free to email me for any question or sugestion.
-    </p>
-    <a href="mailto:vincent+w@club1.fr">vincent+w@club1.fr</a>
-    <h3>💬 Matrix</h3>
-    <p>
-      There is a Matrix Room, feel free to ask questions in english or french.
-    </p>
-    <a href="matrix:r/w-cms:club1.fr">Matrix</a>
-    <code class="copy">#w-cms:club1.fr</code>
+			<p>
+				Vincent Peugnet would like to thanks <a href="https://linktr.ee/faehomepage" target="_blank">Fae Prevost
+					Leygonie</a>
+				and <a href="https://alixturcq.club1.fr/" target="_blank">Alix Turcq</a>
+				for their precious feedback and testing.
+			</p>
 
+			<h3>W was made using these open sources and free components :</h3>
+			<ul>
+				<li>
+					<a href="https://www.php.net/">🐘 PHP</a>
+					as main programming language.
+				</li>
+				<li><a href="https://github.com/jamesmoss/flywheel" target="_blank">🎡 James Moss's Flywheel Database</a>
+				<i>as json noSQL flatfile database engine</i></li>
+				<li><a href="https://github.com/michelf/php-markdown" target="_blank">📝 Michel Fortin's Markdown Extra</a>
+				<i>markdown library</i></li>
+				<li><a href="https://github.com/thephpleague/plates" target="_blank">🎨 Plates</a>
+				<i>as templating engine</i></li>
+				<li><a href="https://github.com/dannyvankooten/AltoRouter" target="_blank">🐶 Alto Router</a>
+				<i>as router engine</i></li>
+				<li><a href="https://codemirror.net/" target="_blank">🐒 Code mirror</a>
+				<i>as rich text editor</i></li>
+				<li><a href="https://js.cytoscape.org/" target="_blank">⚛️ Cytoscape.js</a>
+				<i>as graph tool</i></li>
+				<li>
+					<a href="https://leafletjs.com/" target="_blank">🍂 Leaflet</a>
+					<i>for the Open Street Map integration</i>
+				</li>
+			</ul>
 
-
-    <h2 id="acknowledgment">
-      ❤️‍🔥 Acknowledgment
-      <a href="#acknowledgment">#</a>
-    </h2>
-
-    <h3>Contributors</h3>
-
-    <p>
-      W is mainly maintained by <a href="https://246.eu/vincent-peugnet" target="_blank">Vincent Peugnet</a>,
-      with valuable help from <a href="https://nicolas.club1.fr" target="_blank">Nicolas Peugnet</a>,
-      who designed many of the complex workflows that make W less easy to break.
-      In 2024, W's interface was refreshed by <a href="https://www.accentgrave.net/" target="_blank">Julien Bidoret</a>,
-      who used his skills as a developer and designer to make W more welcoming and intuitive.
-    </p>
-
-    <p>
-      Vincent Peugnet would like to thanks <a href="https://linktr.ee/faehomepage" target="_blank">Fae Prevost
-        Leygonie</a>
-      and <a href="https://alixturcq.club1.fr/" target="_blank">Alix Turcq</a>
-      for their precious feedback and testing.
-    </p>
-
-    <h3>W was made using these open sources and free components :</h3>
-    <ul>
-      <li>
-        <a href="https://www.php.net/">🐘 PHP</a> as main programming language.
-      </li>
-      <li><a href="https://github.com/jamesmoss/flywheel" target="_blank">🎡 James Moss's Flywheel Database</a>
-        <i>as json noSQL flatfile database engine</i>
-      </li>
-      <li><a href="https://github.com/michelf/php-markdown" target="_blank">📝 Michel Fortin's Markdown Extra</a>
-        <i>markdown library</i>
-      </li>
-      <li><a href="https://github.com/thephpleague/plates" target="_blank">🎨 Plates</a>
-        <i>as templating engine</i>
-      </li>
-      <li><a href="https://github.com/dannyvankooten/AltoRouter" target="_blank">🐶 Alto Router</a>
-        <i>as router engine</i>
-      </li>
-      <li><a href="https://codemirror.net/" target="_blank">🐒 Code mirror</a>
-        <i>as rich text editor</i>
-      </li>
-      <li><a href="https://js.cytoscape.org/" target="_blank">⚛️ Cytoscape.js</a>
-        <i>as graph tool</i>
-      </li>
-      <li>
-        <a href="https://leafletjs.com/" target="_blank">🍂 Leaflet</a>
-        <i>for the Open Street Map integration</i>
-      </li>
-    </ul>
-
-    <div class="next">
-      <ul>
-        <li>
-          ➡️ continue reading:
-          <a href="usage.html">usage</a>
-        </li>
-        <li>
-          ⬆️
-          <a href="#title">back to top</a>
-        </li>
-      </ul>
-    </div>
-  </main>
-  <footer>
-    <h4>About this website</h4>
-    <p>
-      Font
-      <strong>Karrik</strong>
-      by Jean-Baptiste Morizot, Lucas Le Bihan. Distributed by velvetyne.fr.
-      <br>
-      Font
-      <strong>ABeeZee</strong>
-      by Anja Meiners.
-    </p>
-    <p>
-      Sources of the website are on
-      <a href="https://github.com/vincent-peugnet/wcms-website">Github</a>.
-    </p>
-  </footer>
-</body>
-
+			<div class="next">
+				<ul>
+					<li>
+						➡️ continue reading:
+						<a href="usage.html">usage</a>
+					</li>
+					<li>
+						⬆️
+						<a href="#title">back to top</a>
+					</li>
+				</ul>
+			</div>
+		</main>
+		<footer>
+			<h4>About this website</h4>
+			<p>
+				Font
+				<strong>Karrik</strong>
+				by Jean-Baptiste Morizot, Lucas Le Bihan. Distributed by velvetyne.fr.
+				<br>
+				Font
+				<strong>ABeeZee</strong>
+				by Anja Meiners.
+			</p>
+			<p>
+				Sources of the website are on
+				<a href="https://github.com/vincent-peugnet/wcms-website">Github</a>.
+			</p>
+		</footer>
+	</body>
 </html>

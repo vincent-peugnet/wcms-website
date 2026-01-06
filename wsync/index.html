@@ -42,6 +42,9 @@
       <li>🔩
         <a href="#installation">installation</a>
       </li>
+      <li>💡
+        <a href="#tips">tips</a>
+      </li>
     </ul>
   </nav>
   <main>
@@ -158,30 +161,6 @@
       The command will then be only accessible by your user.
     </p>
 
-    <h3>Create an alias</h3>
-
-    <p>
-      Launching Wsync depend on your current working directory.
-      To trigger sync more independently,
-      you may want to create an alias that would take advantage of
-      the <code class="nowrap">-C</code> flag (to override working directory).
-    </p>
-
-    <p>
-      On <em>Ubuntu</em> or <em>Debian</em> Linux distribution,
-      you can edit your <code>~/.bashrc</code> file to add the following line:
-    </p>
-
-    <div class="block">
-        <code>
-            alias SITENAME='wsync -C PATH'
-        </code>
-    </div>
-    <p>
-      With <code>SITENAME</code> being a nickname of your site and
-      <code>PATH</code> the directory that you choosed for sync.
-    </p>
-    
 
     <h3>Building from sources</h3>
 
@@ -197,6 +176,60 @@
       <code>make</code>
       to run the build.
     </p>
+
+
+
+    <h2 id="tips">
+      💡 Tips
+      <a href="#tips">#</a>
+    </h2>
+
+    <p>
+      W<small>sync</small> itself is limited,
+      but it can be combined with other POSIX tools to achieve more complex workflows.
+    </p>
+
+    <h3>Create an alias</h3>
+
+    <p>
+      Launching Wsync depend on your current working directory.
+      To trigger sync more independently,
+      you may want to create an alias that would take advantage of
+      the <code class="nowrap">-C</code> flag (to override working directory).
+    </p>
+
+    <p>
+      On <em>Ubuntu</em> or <em>Debian</em> Linux distribution,
+      you can edit your <code>~/.bashrc</code> file to add the following line:
+    </p>
+
+    <div class="block">
+      <code>
+        alias SITENAME='wsync -C PATH'
+      </code>
+    </div>
+    <p>
+      With <code>SITENAME</code> being a nickname of your site and
+      <code>PATH</code> the directory that you choosed for sync.
+    </p>
+    
+    <h3>Watch folder updates</h3>
+
+    <p>
+      We can use <code>fswatch</code> command to detect changes on our local files.
+      If it occured, we could then push the modifications to the server.
+    </p>
+
+    <div class="block">
+      <code>
+        fswatch --event Updated  *.md | xargs -I_ wsync push
+      </code>
+    </div>
+
+    <p>
+      The code above will trigger a <code>push</code> everytime a local markdown file is updated.
+    </p>
+
 
 
     <div class="next">

@@ -112,6 +112,10 @@ ul {
     margin: 30px 0;
 }
 
+ul ul {
+    margin: 10px 0;
+}
+
 header ul {
     display: inline-block;
     list-style: none;
@@ -147,7 +151,7 @@ main {
 
 h4 {
     font-size: 1.5em;
-    margin: 10px 0;
+    margin-top: 1.5em;
 }
 
 .archives img {
@@ -185,6 +189,9 @@ code {
     padding: 10px;
     font-size: 1.3em;
     max-width: 580px;
+    overflow: auto;
+    white-space: nowrap;
+    tab-size: 4;
 }
 
 
@@ -192,6 +199,9 @@ code span.lowlight {
     color: grey;
 }
 
+code span.indent {
+    white-space: pre;
+}
 
 code.nowrap {
     white-space: nowrap;

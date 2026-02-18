@@ -222,7 +222,7 @@
 
     <div class="block">
       <code>
-        fswatch --event Updated  *.md | xargs -I_ wsync push
+        fswatch --event Updated  *.md | xargs -I wsync push
       </code>
     </div>
 
@@ -230,6 +230,60 @@
       The code above will trigger a <code>push</code> everytime a local markdown file is updated.
     </p>
 
+
+    <h3>Repeated synchronization</h3>
+
+    <p>
+      A shell script could use a loop to trigger the <em>sync</em> regularly.
+      In the following example, <code>notify-send</code> is also used to send a visual notification.
+    </p>
+
+    <div class="block">
+      <code>
+        <span class="lowlight">#!/bin/sh</span><br>
+        while true<br>
+        do<br>
+        <span class="indent">&#x09;</span>notify-send "$(wsync -C <span class="highlight">REPO_PATH</span> sync)"<br>
+        <span class="indent">&#x09;</span>sleep 1000 <span class="lowlight"># every 1000 seconds</span><br>
+        done
+      </code>
+    </div>
+
+
+    <h4>FreeDesktop integration</h4>
+
+    <p>
+      To go even further, we can use the <em>FreeDesktop</em> <code>[Desktop Entry]</code> standard to create a button or add it to the system menu.
+      This can also be autostarted during session lauch using <code>Autostart</code>.
+    </p>
+    <ul>
+      <li>
+        <strong>Desktop Entry</strong>
+        <ul>
+          <li><a href="https://specifications.freedesktop.org/desktop-entry/latest/">specification</a></li>
+          <li>a <a href="https://www.baeldung.com/linux/desktop-entry-files">tutorial</a> on <em>Baeldung.com</em></li>
+        </ul>
+      </li>
+      <li>
+        <strong>Autostart</strong>
+        <ul>
+          <li><a href="https://specifications.freedesktop.org/autostart/latest/">specification</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>Here is an example of what it would look like:</p>
+
+    <div class="block">
+      <code>
+        [Desktop Entry]<br>
+        Type=Application<br>
+        Terminal=false<br>
+        Name=<span class="highlight">NAME</span><br>
+        Icon=utilities-terminal<br>
+        Exec=<span class="highlight">PATH_TO_THE_SCRIPT</span><br>
+      </code>
+    </div>
 
 
     <div class="next">

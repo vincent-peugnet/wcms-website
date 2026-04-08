@@ -9,14 +9,18 @@
 }
 
 :root {
-    --background-color: antiquewhite;
-    --accent-color: hsl(13, 97%, 24%);
-    --border-color: #781c023d;
-    --secondary-background: hsl(34deg 100% 84.2%);
+    color-scheme: light dark;
+    --background-color: light-dark(antiquewhite, #251c09);
+    --text-color: light-dark(black, antiquewhite);
+    --accent-color: light-dark(hsl(13, 97%, 24%), hsl(13, 60%, 50%));
+    --border-color: light-dark(#781c023d, #4b1100);
+    --secondary-background: light-dark(hsl(34deg 100% 84.2%), #4b1100);
+    --code-background-color: light-dark(white, #333);
 }
 
 body {
     background-color: var(--background-color);
+    color: var(--text-color);
     font-family: ABeeZee;
     margin: 3%;
 }
@@ -172,12 +176,12 @@ main span.circle {
 
 
 .highlight {
-    /* color: red; */
+    color: black;
     background: yellow;
 }
 
 code {
-    background: white;
+    background: var(--code-background-color);
     border-radius: 5px;
     padding: 3px 5px;
     font-size: 1.1em;
@@ -249,19 +253,11 @@ footer p {
     text-align: left;
 }
 
-kbd {
-    background: white;
-    padding: 3px 7px;
-    border-radius: 8px;
-    box-shadow: 3px 3px #656565;
-    font-weight: bold;
-}
-
-p button {
+p button, kbd {
     border-radius: 5px;
     font-weight: bold;
     border: none;
-    background: #c5c5c5;
+    background: var(--secondary-background);
     padding: 3px 7px;
     box-shadow: 2px 2px grey;
 }
@@ -295,3 +291,15 @@ a {
 span.unbreakable {
     text-wrap-mode: nowrap;
 }
+
+@media (prefers-color-scheme: dark) {
+    img {
+        filter: brightness(0.8) contrast(1.1);
+    }
+    img[src$=".svg"] {
+        filter: invert(0.9);
+    }
+    .pc img {
+        box-shadow: none;
+    }
+  }

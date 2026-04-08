@@ -1,8 +1,9 @@
 
 
 :root {
-    --background-color: rgb(215, 239, 250);
-    --accent-color: hsl(187, 97%, 24%);
-    --border-color: #0235783d;
-    --secondary-background: hsl(199, 100%, 84%);
+    --background-color: light-dark(rgb(215, 239, 250), rgb(13, 32, 41));
+    --text-color: light-dark(black, rgb(215, 239, 250));
+    --accent-color: light-dark(hsl(187, 97%, 24%), hsl(187, 70%, 45%));
+    --border-color: light-dark(#0235783d, hsl(199, 50%, 20%));
+    --secondary-background: light-dark(hsl(199, 100%, 84%), hsl(199, 50%, 20%));
 }

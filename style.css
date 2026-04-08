@@ -8,6 +8,12 @@
     src: url(fonts/ABeeZee-Regular.woff2);
 }
 
+@font-face {
+    font-family: ABeeZee;
+    font-style: italic;
+    src: url(fonts/ABeeZee-Italic.woff2);
+}
+
 :root {
     color-scheme: light dark;
     --background-color: light-dark(antiquewhite, #251c09);

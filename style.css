@@ -16,7 +16,7 @@
 
 :root {
     color-scheme: light dark;
-    --background-color: light-dark(antiquewhite, #251c09);
+    --background-color: light-dark(antiquewhite, #222);
     --text-color: light-dark(black, antiquewhite);
     --accent-color: light-dark(hsl(13, 97%, 24%), hsl(13, 60%, 50%));
     --border-color: light-dark(#781c023d, #4b1100);

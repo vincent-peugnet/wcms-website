@@ -282,6 +282,25 @@
 				During this initialization, an admin user is created and you'll be able to login using this account.
 			</p>
 
+			<h3>Troubleshooting</h3>
+
+			<p>Things that could go wrong reported by users.</p>
+
+			<details>
+				<summary>
+					"Deprecated" warnings are showing up
+				</summary>
+				<p>
+					This is due a bad PHP configuration on the server.
+					Setting <code>display_errors</code> should be set to <code>Off</code> on production environnements
+					as explained in the
+					<a href="https://www.php.net/manual/en/errorfunc.configuration.php#ini.display-errors">PHP Doc</a>.
+				</p>
+				<p>
+					You should contact your Web host or edit your PHP server config.
+				</p>
+			</details>
+
 			<h3>Update</h3>
 
 			<p>

@@ -220,6 +220,11 @@ code.copy {
     user-select: all;
 }
 
+
+details, blockquote {
+    background: #8881;
+}
+
 details {
     border: solid 1px var(--border-color);
     border-radius: 10px;

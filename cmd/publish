@@ -1,0 +1,3 @@
+#!/bin/sh -ex
+
+rsync -e ssh -avz --exclude=".*" --exclude="cmd/" . vincent@club1.fr:/home/vincent/web/wcms/

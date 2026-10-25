@@ -10,6 +10,6 @@ It's just HTML.
 
 When browsing website folder in the terminal.
 
-    rsync -e ssh -avz --exclude=".*"  . vincent@club1.fr:/home/vincent/web/wcms/
+    cmd/publish
 
 (this won't delete removed files)

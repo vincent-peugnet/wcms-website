@@ -3,11 +3,14 @@
 digraph g {
     rankdir=TD;
 	bgcolor=transparent;
-    node [shape=tab]
+    content    [shape=tab]
+    css        [shape=tab]
+    body       [shape=tab]
+    javascript [shape=tab]
 
     content
     css -> cssfile
-    BODY -> HTML
+    body -> render -> HTML
     javascript -> js
     
     cssfile [label="CSS file",shape=note]
